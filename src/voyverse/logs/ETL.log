@@ -1,0 +1,182 @@
+2026-06-17 18:59:38 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:11:14 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:11:14 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:12:19 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:12:19 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:21:17 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:21:17 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:21:51 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:21:51 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:23:54 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:23:54 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:24:26 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:24:26 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:38:00 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:38:00 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:39:47 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:39:47 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:39:47 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:41:48 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:41:48 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:41:48 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:42:03 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:42:03 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:42:03 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:42:44 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:42:44 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:42:44 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:42:45 | INFO     | ETL | Starting loding phase
+2026-06-17 19:44:57 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:44:57 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:44:57 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:45:13 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:45:13 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:45:13 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:45:13 | INFO     | ETL | {}
+2026-06-17 19:45:13 | INFO     | ETL | Starting loding phase
+2026-06-17 19:45:48 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:45:48 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:45:48 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:45:48 | INFO     | ETL | {'type': 'tactic', 'id': 'x-mitre-tactic--e78b4630-6ed6-5f22-9409-f6f4fcf4e78c', 'metadata': {'created': '2021-05-13T00:00:00.000Z', 'modified': '2025-10-13T00:00:00.000Z', 'description': 'The adversary is attempting to gain some level of access to an AI model.\n\nAI Model Access enables techniques that use various types of access to the AI model that can be used by the adversary to gain information, develop attacks, and as a means to input data to the model.\nThe level of access can range from the full knowledge of the internals of the model to access to the physical environment where data is collected for use in the AI model.\nThe adversary may use varying levels of model access during the course of their attack, from staging the attack to impacting the target system.\n\nAccess to an AI model may require access to the system housing the model, the model may be publicly accessible via an API, or it may be accessed indirectly via interaction with a product or service that utilizes AI as part of its processes.'}}
+2026-06-17 19:45:48 | INFO     | ETL | Starting loding phase
+2026-06-17 19:47:44 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:47:44 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:47:44 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:47:44 | INFO     | ETL | Starting loding phase
+2026-06-17 19:47:44 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=0
+2026-06-17 19:55:43 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:55:43 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:55:43 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:55:43 | INFO     | ETL | Starting loding phase
+2026-06-17 19:55:43 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=0
+2026-06-17 19:55:43 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:55:43 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=0
+2026-06-17 19:55:43 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:55:43 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=0
+2026-06-17 19:55:43 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:55:43 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=0
+2026-06-17 19:55:43 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:55:43 | INFO     | ETL | Preparing to load relationships | relationship_type=tactic | count=0
+2026-06-17 19:55:43 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:55:43 | INFO     | ETL | Preparing to load relationships | relationship_type=technique | count=0
+2026-06-17 19:55:43 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:55:43 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigation | count=0
+2026-06-17 19:55:43 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:55:43 | INFO     | ETL | Preparing to load relationships | relationship_type=casestudy | count=0
+2026-06-17 19:55:43 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:58:30 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:58:30 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:58:30 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:58:30 | INFO     | ETL | {'type': 'tactic', 'id': 'x-mitre-tactic--e78b4630-6ed6-5f22-9409-f6f4fcf4e78c', 'created': '2021-05-13T00:00:00.000Z', 'modified': '2025-10-13T00:00:00.000Z', 'description': 'The adversary is attempting to gain some level of access to an AI model.\n\nAI Model Access enables techniques that use various types of access to the AI model that can be used by the adversary to gain information, develop attacks, and as a means to input data to the model.\nThe level of access can range from the full knowledge of the internals of the model to access to the physical environment where data is collected for use in the AI model.\nThe adversary may use varying levels of model access during the course of their attack, from staging the attack to impacting the target system.\n\nAccess to an AI model may require access to the system housing the model, the model may be publicly accessible via an API, or it may be accessed indirectly via interaction with a product or service that utilizes AI as part of its processes.'}
+2026-06-17 19:58:30 | INFO     | ETL | Starting loding phase
+2026-06-17 19:58:30 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=0
+2026-06-17 19:58:30 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:58:30 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=0
+2026-06-17 19:58:30 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:58:30 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=0
+2026-06-17 19:58:30 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:58:30 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=0
+2026-06-17 19:58:30 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:58:30 | INFO     | ETL | Preparing to load relationships | relationship_type=tactic | count=0
+2026-06-17 19:58:30 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:58:30 | INFO     | ETL | Preparing to load relationships | relationship_type=technique | count=0
+2026-06-17 19:58:30 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:58:30 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigation | count=0
+2026-06-17 19:58:30 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:58:30 | INFO     | ETL | Preparing to load relationships | relationship_type=casestudy | count=0
+2026-06-17 19:58:30 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:59:14 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:59:14 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:59:14 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:59:18 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 19:59:18 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 19:59:18 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 19:59:18 | INFO     | ETL | []
+2026-06-17 19:59:18 | INFO     | ETL | Starting loding phase
+2026-06-17 19:59:18 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=0
+2026-06-17 19:59:18 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:59:18 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=0
+2026-06-17 19:59:18 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:59:18 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=0
+2026-06-17 19:59:18 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:59:18 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=0
+2026-06-17 19:59:18 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 19:59:18 | INFO     | ETL | Preparing to load relationships | relationship_type=tactic | count=0
+2026-06-17 19:59:18 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:59:18 | INFO     | ETL | Preparing to load relationships | relationship_type=technique | count=0
+2026-06-17 19:59:18 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:59:18 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigation | count=0
+2026-06-17 19:59:18 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 19:59:18 | INFO     | ETL | Preparing to load relationships | relationship_type=casestudy | count=0
+2026-06-17 19:59:18 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 20:00:03 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 20:00:03 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 20:00:03 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 20:00:03 | INFO     | ETL | Starting loding phase
+2026-06-17 20:00:03 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=0
+2026-06-17 20:00:03 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 20:00:03 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=0
+2026-06-17 20:00:03 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 20:00:03 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=0
+2026-06-17 20:00:03 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 20:00:03 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=0
+2026-06-17 20:00:03 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 20:00:03 | INFO     | ETL | Preparing to load relationships | relationship_type=tactic | count=0
+2026-06-17 20:00:03 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 20:00:03 | INFO     | ETL | Preparing to load relationships | relationship_type=technique | count=0
+2026-06-17 20:00:03 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 20:00:03 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigation | count=0
+2026-06-17 20:00:03 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 20:00:03 | INFO     | ETL | Preparing to load relationships | relationship_type=casestudy | count=0
+2026-06-17 20:00:03 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 20:00:28 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 20:00:28 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 20:00:28 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 20:00:28 | INFO     | ETL | Starting loding phase
+2026-06-17 20:00:28 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=0
+2026-06-17 20:00:28 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 20:00:28 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=0
+2026-06-17 20:00:28 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 20:00:28 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=0
+2026-06-17 20:00:28 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 20:00:28 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=0
+2026-06-17 20:00:28 | INFO     | ETL | Nodes loaded into Neo4j | nodes=0
+2026-06-17 20:00:28 | INFO     | ETL | Preparing to load relationships | relationship_type=tactic | count=0
+2026-06-17 20:00:28 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 20:00:28 | INFO     | ETL | Preparing to load relationships | relationship_type=technique | count=0
+2026-06-17 20:00:28 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 20:00:28 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigation | count=0
+2026-06-17 20:00:28 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 20:00:28 | INFO     | ETL | Preparing to load relationships | relationship_type=casestudy | count=0
+2026-06-17 20:00:28 | INFO     | ETL | Data loaded into Neo4j | relationships=0
+2026-06-17 20:02:54 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 20:02:54 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 20:02:54 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 20:02:54 | INFO     | ETL | Starting loding phase
+2026-06-17 20:02:54 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=16
+2026-06-17 20:02:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=16
+2026-06-17 20:02:54 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=170
+2026-06-17 20:02:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=170
+2026-06-17 20:02:54 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=35
+2026-06-17 20:02:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=35
+2026-06-17 20:02:54 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=57
+2026-06-17 20:02:55 | INFO     | ETL | Nodes loaded into Neo4j | nodes=57
+2026-06-17 20:02:55 | INFO     | ETL | Preparing to load relationships | relationship_type=subtechnique-of | count=69
+2026-06-17 20:09:15 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-17 20:09:15 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-17 20:09:15 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-17 20:09:15 | INFO     | ETL | Starting loding phase
+2026-06-17 20:09:15 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=16
+2026-06-17 20:09:15 | INFO     | ETL | Nodes loaded into Neo4j | nodes=16
+2026-06-17 20:09:15 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=170
+2026-06-17 20:09:15 | INFO     | ETL | Nodes loaded into Neo4j | nodes=170
+2026-06-17 20:09:15 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=35
+2026-06-17 20:09:15 | INFO     | ETL | Nodes loaded into Neo4j | nodes=35
+2026-06-17 20:09:15 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=57
+2026-06-17 20:09:15 | INFO     | ETL | Nodes loaded into Neo4j | nodes=57
+2026-06-17 20:09:15 | INFO     | ETL | Preparing to load relationships | relationship_type=subtechnique_of | count=69
+2026-06-17 20:09:16 | INFO     | ETL | Data loaded into Neo4j | relationships=69
+2026-06-17 20:09:16 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigates | count=246
+2026-06-17 20:09:16 | INFO     | ETL | Data loaded into Neo4j | relationships=246
+2026-06-17 20:09:16 | INFO     | ETL | Preparing to load relationships | relationship_type=uses | count=449
+2026-06-17 20:09:16 | INFO     | ETL | Data loaded into Neo4j | relationships=449

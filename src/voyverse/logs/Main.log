@@ -1,0 +1,262 @@
+2026-06-17 19:21:17 | ERROR    | Main | An error occurred during the ETL process | error={neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '{': expected a node label/relationship type name, '$', '%' or '(' (line 4, column 18 (offset: 56))
+"        MERGE (n:{$type} {id: $id})"
+                  ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-17 19:21:17 | INFO     | Main | Closing database connection
+2026-06-17 19:21:51 | ERROR    | Main | An error occurred during the ETL process
+neo4j.exceptions.GqlError: {gql_status: 42I06} {gql_status_description: error: syntax error or access rule violation - invalid input. Invalid input '{', expected: a node label/relationship type name, '$', '%' or '('.} {message: 42I06: Invalid input '{', expected: a node label/relationship type name, '$', '%' or '('.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', '_position': {'column': 18, 'line': 4, 'offset': 56}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 78, in run
+    self.load(entities, relations)
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 71, in load
+    jobs_node = self.connection.execute_batch(node_cypher_template, entities_dict)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 50, in execute_batch
+    session.execute_write(_batch_work)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 754, in execute_write
+    return self._run_transaction(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 577, in _run_transaction
+    result = transaction_function(tx, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 45, in _batch_work
+    result = tx.run(wrapped_query, {"batch": batch_data})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/transaction.py", line 201, in run
+    result._tx_ready_run(query, parameters)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 180, in _tx_ready_run
+    self._run(query, parameters, None, None, None, None, None, None)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '{': expected a node label/relationship type name, '$', '%' or '(' (line 4, column 18 (offset: 56))
+"        MERGE (n:{$type} {id: $id})"
+                  ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-17 19:21:51 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:23:54 | ERROR    | Main | An error occurred during the ETL process
+neo4j.exceptions.GqlError: {gql_status: 42I06} {gql_status_description: error: syntax error or access rule violation - invalid input. Invalid input '{', expected: a node label/relationship type name, '$', '%' or '('.} {message: 42I06: Invalid input '{', expected: a node label/relationship type name, '$', '%' or '('.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', '_position': {'column': 18, 'line': 4, 'offset': 56}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 78, in run
+    self.load(entities, relations)
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 71, in load
+    jobs_node = self.connection.execute_batch(node_cypher_template, entities_dict)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 50, in execute_batch
+    session.execute_write(_batch_work)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 754, in execute_write
+    return self._run_transaction(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 577, in _run_transaction
+    result = transaction_function(tx, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 45, in _batch_work
+    result = tx.run(wrapped_query, {"batch": batch_data})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/transaction.py", line 201, in run
+    result._tx_ready_run(query, parameters)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 180, in _tx_ready_run
+    self._run(query, parameters, None, None, None, None, None, None)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '{': expected a node label/relationship type name, '$', '%' or '(' (line 4, column 18 (offset: 56))
+"        MERGE (n:{$type} {id: $id})"
+                  ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-17 19:23:54 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:24:26 | ERROR    | Main | An error occurred during the ETL process
+neo4j.exceptions.GqlError: {gql_status: 42I06} {gql_status_description: error: syntax error or access rule violation - invalid input. Invalid input '{', expected: a node label/relationship type name, '$', '%' or '('.} {message: 42I06: Invalid input '{', expected: a node label/relationship type name, '$', '%' or '('.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', '_position': {'column': 18, 'line': 4, 'offset': 56}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 78, in run
+    self.load(entities, relations)
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 71, in load
+    jobs_node = self.connection.execute_batch(node_cypher_template, entities_dict)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 50, in execute_batch
+    session.execute_write(_batch_work)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 754, in execute_write
+    return self._run_transaction(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 577, in _run_transaction
+    result = transaction_function(tx, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 45, in _batch_work
+    result = tx.run(wrapped_query, {"batch": batch_data})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/transaction.py", line 201, in run
+    result._tx_ready_run(query, parameters)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 180, in _tx_ready_run
+    self._run(query, parameters, None, None, None, None, None, None)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '{': expected a node label/relationship type name, '$', '%' or '(' (line 4, column 18 (offset: 56))
+"        MERGE (n:{$type} {id: $id})"
+                  ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-17 19:24:26 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:38:00 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:39:47 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:41:48 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:42:03 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:42:45 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:44:57 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 100, in run
+    self.load(entities, relations)
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 68, in load
+    logger.info(str(grouped_entities["tactic"][0]))
+                    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'tactic'
+2026-06-17 19:44:57 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:45:13 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:45:48 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:47:44 | ERROR    | Main | An error occurred during the ETL process
+neo4j.exceptions.GqlError: {gql_status: 42N81} {gql_status_description: error: syntax error or access rule violation - missing request parameter. Expected $`id`, $`created`, $`modified` and $`description`, but got $`batch`.} {message: 42N81: Expected $`id`, $`created`, $`modified` and $`description`, but got $`batch`.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 104, in run
+    self.load(entities, relations)
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 84, in load
+    jobs_node = self.connection.execute_batch(node_cypher_template, items)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 50, in execute_batch
+    session.execute_write(_batch_work)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 754, in execute_write
+    return self._run_transaction(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 577, in _run_transaction
+    result = transaction_function(tx, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 45, in _batch_work
+    result = tx.run(wrapped_query, {"batch": batch_data})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/transaction.py", line 201, in run
+    result._tx_ready_run(query, parameters)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 180, in _tx_ready_run
+    self._run(query, parameters, None, None, None, None, None, None)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.ClientError: {neo4j_code: Neo.ClientError.Statement.ParameterMissing} {message: Expected parameter(s): id, created, modified, description} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-17 19:47:44 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:55:43 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:58:30 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:59:14 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 105, in run
+    self.load(entities, relations)
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 73, in load
+    logger.info(str(grouped_entities["tactic"][0]))
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-06-17 19:59:14 | INFO     | Main | Neo4j connection closed
+2026-06-17 19:59:18 | INFO     | Main | Neo4j connection closed
+2026-06-17 20:00:03 | INFO     | Main | Neo4j connection closed
+2026-06-17 20:00:28 | INFO     | Main | Neo4j connection closed
+2026-06-17 20:02:55 | ERROR    | Main | An error occurred during the ETL process
+neo4j.exceptions.GqlError: {gql_status: 42I06} {gql_status_description: error: syntax error or access rule violation - invalid input. Invalid input '-', expected: a parameter, '&', '*', ':', 'WHERE', ']', '{' or '|'.} {message: 42I06: Invalid input '-', expected: a parameter, '&', '*', ':', 'WHERE', ']', '{' or '|'.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', '_position': {'column': 43, 'line': 6, 'offset': 177}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 101, in run
+    self.load(entities, relations)
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/etl.py", line 94, in load
+    jobs_relation = self.connection.execute_batch(relation_cypher_template, items)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 50, in execute_batch
+    session.execute_write(_batch_work)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 754, in execute_write
+    return self._run_transaction(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 577, in _run_transaction
+    result = transaction_function(tx, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 45, in _batch_work
+    result = tx.run(wrapped_query, {"batch": batch_data})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/transaction.py", line 201, in run
+    result._tx_ready_run(query, parameters)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 180, in _tx_ready_run
+    self._run(query, parameters, None, None, None, None, None, None)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '-': expected a parameter, '&', '*', ':', 'WHERE', ']', '{' or '|' (line 6, column 43 (offset: 177))
+"            MERGE (source)-[r:subtechnique-of]->(target)"
+                                           ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-17 20:02:55 | INFO     | Main | Neo4j connection closed
+2026-06-17 20:09:16 | INFO     | Main | Neo4j connection closed

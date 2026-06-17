@@ -1,0 +1,125 @@
+2026-06-17 18:56:33 | INFO     | Neo4jConnection | Establishing Neo4j connection | uri=bolt://127.0.0.1:7687 | user=Neo4j | password=test1234
+2026-06-17 18:58:28 | INFO     | Neo4jConnection | Establishing Neo4j connection | uri=bolt://127.0.0.1:7687 | user=neo4j | password=test1234
+2026-06-17 19:47:44 | ERROR    | Neo4jConnection | Batch execution failed
+neo4j.exceptions.GqlError: {gql_status: 42N81} {gql_status_description: error: syntax error or access rule violation - missing request parameter. Expected $`id`, $`created`, $`modified` and $`description`, but got $`batch`.} {message: 42N81: Expected $`id`, $`created`, $`modified` and $`description`, but got $`batch`.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 50, in execute_batch
+    session.execute_write(_batch_work)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 754, in execute_write
+    return self._run_transaction(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 577, in _run_transaction
+    result = transaction_function(tx, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 45, in _batch_work
+    result = tx.run(wrapped_query, {"batch": batch_data})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/transaction.py", line 201, in run
+    result._tx_ready_run(query, parameters)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 180, in _tx_ready_run
+    self._run(query, parameters, None, None, None, None, None, None)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.ClientError: {neo4j_code: Neo.ClientError.Statement.ParameterMissing} {message: Expected parameter(s): id, created, modified, description} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-17 19:55:43 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:55:43 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:55:43 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:55:43 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:55:43 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:55:43 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:55:43 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:55:43 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:58:30 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:58:30 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:58:30 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:58:30 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:58:30 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:58:30 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:58:30 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:58:30 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:59:18 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:59:18 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:59:18 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:59:18 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:59:18 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:59:18 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:59:18 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 19:59:18 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:03 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:03 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:03 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:03 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:03 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:03 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:03 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:03 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:28 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:28 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:28 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:28 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:28 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:28 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:28 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:00:28 | INFO     | Neo4jConnection | Batch execution completed | total_records=0
+2026-06-17 20:02:54 | INFO     | Neo4jConnection | Batch execution completed | total_records=16
+2026-06-17 20:02:54 | INFO     | Neo4jConnection | Batch execution completed | total_records=170
+2026-06-17 20:02:54 | INFO     | Neo4jConnection | Batch execution completed | total_records=35
+2026-06-17 20:02:55 | INFO     | Neo4jConnection | Batch execution completed | total_records=57
+2026-06-17 20:02:55 | ERROR    | Neo4jConnection | Batch execution failed
+neo4j.exceptions.GqlError: {gql_status: 42I06} {gql_status_description: error: syntax error or access rule violation - invalid input. Invalid input '-', expected: a parameter, '&', '*', ':', 'WHERE', ']', '{' or '|'.} {message: 42I06: Invalid input '-', expected: a parameter, '&', '*', ':', 'WHERE', ']', '{' or '|'.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', '_position': {'column': 43, 'line': 6, 'offset': 177}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 50, in execute_batch
+    session.execute_write(_batch_work)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 754, in execute_write
+    return self._run_transaction(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 577, in _run_transaction
+    result = transaction_function(tx, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 45, in _batch_work
+    result = tx.run(wrapped_query, {"batch": batch_data})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/transaction.py", line 201, in run
+    result._tx_ready_run(query, parameters)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 180, in _tx_ready_run
+    self._run(query, parameters, None, None, None, None, None, None)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '-': expected a parameter, '&', '*', ':', 'WHERE', ']', '{' or '|' (line 6, column 43 (offset: 177))
+"            MERGE (source)-[r:subtechnique-of]->(target)"
+                                           ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-17 20:09:15 | INFO     | Neo4jConnection | Batch execution completed | total_records=16
+2026-06-17 20:09:15 | INFO     | Neo4jConnection | Batch execution completed | total_records=170
+2026-06-17 20:09:15 | INFO     | Neo4jConnection | Batch execution completed | total_records=35
+2026-06-17 20:09:15 | INFO     | Neo4jConnection | Batch execution completed | total_records=57
+2026-06-17 20:09:16 | INFO     | Neo4jConnection | Batch execution completed | total_records=69
+2026-06-17 20:09:16 | INFO     | Neo4jConnection | Batch execution completed | total_records=246
+2026-06-17 20:09:16 | INFO     | Neo4jConnection | Batch execution completed | total_records=449
