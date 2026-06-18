@@ -1,2 +1,12 @@
 2026-06-18 13:07:35 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=0 | total_tactics=16
 2026-06-18 13:09:52 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:59:06 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:59:06 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:59:19 | INFO     | ProcessStrategy | LLM classification completed | total_results=13
+2026-06-18 19:59:19 | INFO     | ProcessStrategy | Processing LLM output | label=ValidLabel.APPLICATION | reason=The text describes a system focused on orchestration and workflow management, which is a core function of an application. | id=attack-pattern--c02f812d-59cc-5366-b1aa-7eb05154b772
+2026-06-18 20:00:16 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 20:00:16 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 20:00:29 | INFO     | ProcessStrategy | LLM classification completed | total_results=13
+2026-06-18 20:05:31 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 20:05:31 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 20:05:42 | INFO     | ProcessStrategy | LLM classification completed | total_results=10

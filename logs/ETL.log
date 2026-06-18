@@ -40,3 +40,21 @@
 2026-06-18 13:10:05 | INFO     | ETL | Data loaded into Neo4j | relationships=449
 2026-06-18 13:10:05 | INFO     | ETL | Preparing to load relationships | relationship_type=uses_tactic | count=170
 2026-06-18 13:10:05 | INFO     | ETL | Data loaded into Neo4j | relationships=170
+2026-06-18 19:59:05 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:59:06 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:59:06 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:59:06 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:59:06 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:59:06 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 20:00:15 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 20:00:16 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 20:00:16 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 20:00:16 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 20:00:16 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 20:00:16 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 20:05:30 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 20:05:31 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 20:05:31 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 20:05:31 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 20:05:31 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 20:05:31 | INFO     | ETL | Creating target components (layers and relationships)
