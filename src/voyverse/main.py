@@ -1,4 +1,4 @@
-from ingest.etl import ETL
+from voyverse.ingest.pipeline.etl import ETL
 from internals.database import call_neo4j_connection
 from utils.config import settings
 from utils.logger import VoyverseLogger

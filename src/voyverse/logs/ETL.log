@@ -180,3 +180,64 @@
 2026-06-17 20:09:16 | INFO     | ETL | Data loaded into Neo4j | relationships=246
 2026-06-17 20:09:16 | INFO     | ETL | Preparing to load relationships | relationship_type=uses | count=449
 2026-06-17 20:09:16 | INFO     | ETL | Data loaded into Neo4j | relationships=449
+2026-06-18 12:53:58 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 12:53:58 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 12:53:58 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 12:53:58 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-18 12:53:58 | INFO     | ETL | Starting loding phase
+2026-06-18 12:53:58 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=16
+2026-06-18 12:53:58 | INFO     | ETL | Nodes loaded into Neo4j | nodes=16
+2026-06-18 12:53:58 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=170
+2026-06-18 12:53:58 | INFO     | ETL | Nodes loaded into Neo4j | nodes=170
+2026-06-18 12:53:58 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=35
+2026-06-18 12:53:58 | INFO     | ETL | Nodes loaded into Neo4j | nodes=35
+2026-06-18 12:53:58 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=57
+2026-06-18 12:53:58 | INFO     | ETL | Nodes loaded into Neo4j | nodes=57
+2026-06-18 12:53:58 | INFO     | ETL | Preparing to load relationships | relationship_type=subtechnique_of | count=69
+2026-06-18 12:53:58 | INFO     | ETL | Data loaded into Neo4j | relationships=69
+2026-06-18 12:53:58 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigates | count=246
+2026-06-18 12:53:59 | INFO     | ETL | Data loaded into Neo4j | relationships=246
+2026-06-18 12:53:59 | INFO     | ETL | Preparing to load relationships | relationship_type=uses | count=449
+2026-06-18 12:53:59 | INFO     | ETL | Data loaded into Neo4j | relationships=449
+2026-06-18 12:57:51 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 12:57:51 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 12:57:51 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 12:57:51 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=0
+2026-06-18 12:57:51 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=764
+2026-06-18 12:57:51 | INFO     | ETL | Starting loding phase
+2026-06-18 12:57:51 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=16
+2026-06-18 12:57:51 | INFO     | ETL | Nodes loaded into Neo4j | nodes=16
+2026-06-18 12:57:51 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=170
+2026-06-18 12:57:51 | INFO     | ETL | Nodes loaded into Neo4j | nodes=170
+2026-06-18 12:57:51 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=35
+2026-06-18 12:57:51 | INFO     | ETL | Nodes loaded into Neo4j | nodes=35
+2026-06-18 12:57:51 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=57
+2026-06-18 12:57:51 | INFO     | ETL | Nodes loaded into Neo4j | nodes=57
+2026-06-18 12:57:51 | INFO     | ETL | Preparing to load relationships | relationship_type=subtechnique_of | count=69
+2026-06-18 12:57:51 | INFO     | ETL | Data loaded into Neo4j | relationships=69
+2026-06-18 12:57:51 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigates | count=246
+2026-06-18 12:57:51 | INFO     | ETL | Data loaded into Neo4j | relationships=246
+2026-06-18 12:57:51 | INFO     | ETL | Preparing to load relationships | relationship_type=uses | count=449
+2026-06-18 12:57:51 | INFO     | ETL | Data loaded into Neo4j | relationships=449
+2026-06-18 13:10:39 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 13:10:39 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 13:10:39 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 13:10:39 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 13:10:39 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 13:10:39 | INFO     | ETL | Starting loding phase
+2026-06-18 13:10:39 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=16
+2026-06-18 13:10:39 | INFO     | ETL | Nodes loaded into Neo4j | nodes=16
+2026-06-18 13:10:39 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=170
+2026-06-18 13:10:39 | INFO     | ETL | Nodes loaded into Neo4j | nodes=170
+2026-06-18 13:10:39 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=35
+2026-06-18 13:10:39 | INFO     | ETL | Nodes loaded into Neo4j | nodes=35
+2026-06-18 13:10:39 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=57
+2026-06-18 13:10:39 | INFO     | ETL | Nodes loaded into Neo4j | nodes=57
+2026-06-18 13:10:39 | INFO     | ETL | Preparing to load relationships | relationship_type=subtechnique_of | count=69
+2026-06-18 13:10:39 | INFO     | ETL | Data loaded into Neo4j | relationships=69
+2026-06-18 13:10:39 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigates | count=246
+2026-06-18 13:10:39 | INFO     | ETL | Data loaded into Neo4j | relationships=246
+2026-06-18 13:10:39 | INFO     | ETL | Preparing to load relationships | relationship_type=uses | count=449
+2026-06-18 13:10:39 | INFO     | ETL | Data loaded into Neo4j | relationships=449
+2026-06-18 13:10:39 | INFO     | ETL | Preparing to load relationships | relationship_type=uses_tactic | count=170
+2026-06-18 13:10:39 | INFO     | ETL | Data loaded into Neo4j | relationships=170

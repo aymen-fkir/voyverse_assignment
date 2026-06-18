@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug Main File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/voyverse/main.py", // <-- Change "src" to your actual folder name if different
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

@@ -4,7 +4,7 @@ import json
 from internals.database import call_neo4j_connection,Neo4jConnection
 from utils.config import settings
 from utils.schemas import Node, Relationship
-from .process_strategy import ProcessStrategyFactory
+from ..process.process_strategy import ProcessStrategyFactory,DummieProcessStrategy,TacticsTechniquesProcessStrategy
 from utils.logger import VoyverseLogger
 
 logger = VoyverseLogger.get("ETL")
@@ -35,18 +35,32 @@ class ETL:
         entities, relations = [], []
         
         try:
-            futures = [
-                loop.run_in_executor(self.executor, self.process_factory.create_strategy("dummie").run, data[i:i+chunk_size],self._map)
+            futures_basic_components = [
+                loop.run_in_executor(self.executor, self.process_factory.create_strategy(DummieProcessStrategy).run, data[i:i+chunk_size],self._map)
                 for i in range(0, len(data), chunk_size)
             ]
-            logger.info("Processing data in parallel", total_records=len(data), chunk_size=chunk_size, total_chunks=len(futures))
-            results = await asyncio.gather(*futures)
+            
+            logger.info("Processing data in parallel", total_records=len(data), chunk_size=chunk_size, total_chunks=len(futures_basic_components))
+            
+            futures_advanced_components = [
+                loop.run_in_executor(self.executor, self.process_factory.create_strategy(TacticsTechniquesProcessStrategy).run, data)
+            ]
+            
+            results_basic_components = await asyncio.gather(*futures_basic_components)
 
-            logger.info("Completed parallel processing", total_chunks=len(results))
+            result_advanced_components = await asyncio.gather(*futures_advanced_components)
+            
+            logger.info("Completed parallel processing", total_chunks=len(results_basic_components))
+            logger.info("Completed advanced processing", total_advanced_chunks=len(result_advanced_components))
 
-            for entities_chunk, relations_chunk in results:
+            for entities_chunk, relations_chunk in results_basic_components:
                 entities.extend(entities_chunk)
                 relations.extend(relations_chunk)
+            
+            result_advanced_components = result_advanced_components[0]
+            logger.info("->Advanced processing results", total_advanced_relations=len(result_advanced_components))
+            relations.extend(result_advanced_components)
+
         finally:
             self.executor.shutdown(wait=False)
 

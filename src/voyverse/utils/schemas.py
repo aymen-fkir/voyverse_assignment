@@ -1,5 +1,4 @@
 from pydantic import BaseModel,field_validator
-from typing import Literal
 
 
 
@@ -19,6 +18,7 @@ class Node(BaseModel):
 
 
 
+
 class Relationship(BaseModel):
     type : str
     id : str
@@ -31,7 +31,7 @@ class Relationship(BaseModel):
 
     @field_validator("relationship_type")
     def validate_relationship_type(cls, v):
-        allowed_types = {'subtechnique_of', 'mitigates', 'uses'}
+        allowed_types = {'subtechnique_of', 'mitigates', 'uses',"uses_tactic"}
         if v not in allowed_types:
             raise ValueError(f"Invalid relationship type: {v}. Must be one of {allowed_types}.")
         return v
