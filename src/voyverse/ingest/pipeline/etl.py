@@ -4,7 +4,7 @@ import json
 from internals.database import call_neo4j_connection,Neo4jConnection
 from utils.config import settings
 from utils.schemas import Node, Relationship
-from ..process.process_strategy import ProcessStrategyFactory,DummieProcessStrategy,TacticsTechniquesProcessStrategy
+from ..process.process_strategy import CreateTargetLayers, ProcessStrategyFactory,DummieProcessStrategy,TacticsTechniquesProcessStrategy
 from utils.logger import VoyverseLogger
 
 logger = VoyverseLogger.get("ETL")
@@ -30,6 +30,10 @@ class ETL:
             data = json.load(f)
         return data["objects"]
     
+    def create_target_components(self, data: list[Node]) -> tuple[list[Node], list[Relationship]]:
+        strategy = self.process_factory.create_strategy(CreateTargetLayers)
+        return strategy.run(data)
+    
     async def create_components(self,data: list[dict],chunk_size=100) -> tuple[list[Node], list[Relationship]]:
         loop = asyncio.get_running_loop() 
         entities, relations = [], []
@@ -45,6 +49,8 @@ class ETL:
             futures_advanced_components = [
                 loop.run_in_executor(self.executor, self.process_factory.create_strategy(TacticsTechniquesProcessStrategy).run, data)
             ]
+
+
             
             results_basic_components = await asyncio.gather(*futures_basic_components)
 
@@ -115,4 +121,14 @@ class ETL:
         data = self.extract()
         entities, relations = asyncio.run(self.create_components(data))
         logger.info("Data processing completed, starting load phase", total_entities=len(entities), total_relationships=len(relations))
+        
+        logger.info("Creating target components (layers and relationships)")
+        target_entities, target_relations = self.create_target_components(entities)
+        
+        logger.info("Extending entities and relations with target components {target_entities} {target_relations}", 
+                    total_target_entities=len(target_entities), total_target_relationships=len(target_relations))
+
+
+        entities.extend(target_entities)
+        relations.extend(target_relations)
         self.load(entities, relations)

@@ -1,1 +1,109 @@
 2026-06-18 13:10:39 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:36:28 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:36:28 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:37:16 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:37:16 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:38:11 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:38:11 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:51:41 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:51:41 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:52:09 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:52:09 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:53:53 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:53:53 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:56:25 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:56:25 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:58:21 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:58:21 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:58:32 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:58:32 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:58:57 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:58:57 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 17:59:17 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 17:59:17 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 18:02:48 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 18:02:48 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 18:04:50 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 18:04:50 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 18:11:49 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 18:11:49 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 18:14:03 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 18:14:03 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 18:19:09 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 18:19:09 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 18:34:31 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 18:34:31 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:00:41 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:00:41 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:01:20 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:01:20 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:17:36 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:17:36 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:19:06 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:19:06 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:20:40 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:20:40 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:32:29 | INFO     | ProcessStrategy | LLM classification completed | total_results=177
+2026-06-18 19:41:44 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:41:44 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:44:22 | INFO     | ProcessStrategy | LLM classification completed | total_results=164
+2026-06-18 19:47:40 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:47:40 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:47:53 | INFO     | ProcessStrategy | LLM classification completed | total_results=13
+2026-06-18 19:47:53 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.UI | total_reasons=1 | total_source_refs=1
+2026-06-18 19:47:53 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.APPLICATION | total_reasons=2 | total_source_refs=2
+2026-06-18 19:47:53 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.MODEL | total_reasons=4 | total_source_refs=4
+2026-06-18 19:50:16 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:50:16 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:50:29 | INFO     | ProcessStrategy | LLM classification completed | total_results=13
+2026-06-18 19:50:29 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.UI | total_reasons=1 | total_source_refs=['attack-pattern--4f36677b-3ba6-5556-9eba-0a2311796803']
+2026-06-18 19:50:29 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.APPLICATION | total_reasons=2 | total_source_refs=['attack-pattern--c02f812d-59cc-5366-b1aa-7eb05154b772', 'attack-pattern--a8393765-c78b-5bd3-8f92-74579e8f5a9f']
+2026-06-18 19:50:29 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.MODEL | total_reasons=4 | total_source_refs=['attack-pattern--518338b9-9239-5e02-95f5-146bc758520f', 'attack-pattern--bbffbb39-c270-5822-8786-7bbab1a43dc3', 'attack-pattern--deca63a5-2a52-54ea-abe5-2cd7089d46e4', None]
+2026-06-18 19:53:14 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 19:53:14 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 19:53:27 | INFO     | ProcessStrategy | LLM classification completed | total_results=13
+2026-06-18 19:53:27 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.UI | total_reasons=1 | total_source_refs=['attack-pattern--4f36677b-3ba6-5556-9eba-0a2311796803']
+2026-06-18 19:53:27 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.APPLICATION | total_reasons=2 | total_source_refs=['attack-pattern--c02f812d-59cc-5366-b1aa-7eb05154b772', 'attack-pattern--a8393765-c78b-5bd3-8f92-74579e8f5a9f']
+2026-06-18 19:53:27 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.MODEL | total_reasons=4 | total_source_refs=['attack-pattern--518338b9-9239-5e02-95f5-146bc758520f', 'attack-pattern--bbffbb39-c270-5822-8786-7bbab1a43dc3', 'attack-pattern--deca63a5-2a52-54ea-abe5-2cd7089d46e4', None]
+2026-06-18 20:06:31 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 20:06:31 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 20:06:42 | INFO     | ProcessStrategy | LLM classification completed | total_results=10
+2026-06-18 20:06:42 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.UI | total_reasons=1 | total_source_refs=['attack-pattern--4f36677b-3ba6-5556-9eba-0a2311796803']
+2026-06-18 20:06:42 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.APPLICATION | total_reasons=2 | total_source_refs=['attack-pattern--c02f812d-59cc-5366-b1aa-7eb05154b772', 'attack-pattern--a8393765-c78b-5bd3-8f92-74579e8f5a9f']
+2026-06-18 20:06:42 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.MODEL | total_reasons=3 | total_source_refs=['attack-pattern--518338b9-9239-5e02-95f5-146bc758520f', 'attack-pattern--bbffbb39-c270-5822-8786-7bbab1a43dc3', 'attack-pattern--deca63a5-2a52-54ea-abe5-2cd7089d46e4']
+2026-06-18 20:06:42 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.INFRASTRUCTURE | total_reasons=2 | total_source_refs=['attack-pattern--02ea7626-0eec-5a4b-98ff-b3f21733b783', 'attack-pattern--cf1a7a78-0509-59a6-a8a4-35d9e1e966a4']
+2026-06-18 20:06:42 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.DATA_SOURCES | total_reasons=2 | total_source_refs=['attack-pattern--88a794e9-fa8c-5185-a677-bf476cd8890b', 'attack-pattern--8eb979a1-1e5a-5955-8a7d-df82ecb14088']
+2026-06-18 20:06:42 | INFO     | ProcessStrategy | Postprocessed LLM results | total_processed_results=5
+2026-06-18 20:08:49 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 20:08:49 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 20:09:00 | INFO     | ProcessStrategy | LLM classification completed | total_results=10
+2026-06-18 20:09:00 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.UI | total_reasons=1 | total_source_refs=['attack-pattern--4f36677b-3ba6-5556-9eba-0a2311796803']
+2026-06-18 20:09:00 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.APPLICATION | total_reasons=2 | total_source_refs=['attack-pattern--c02f812d-59cc-5366-b1aa-7eb05154b772', 'attack-pattern--a8393765-c78b-5bd3-8f92-74579e8f5a9f']
+2026-06-18 20:09:00 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.MODEL | total_reasons=3 | total_source_refs=['attack-pattern--518338b9-9239-5e02-95f5-146bc758520f', 'attack-pattern--bbffbb39-c270-5822-8786-7bbab1a43dc3', 'attack-pattern--deca63a5-2a52-54ea-abe5-2cd7089d46e4']
+2026-06-18 20:09:00 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.INFRASTRUCTURE | total_reasons=2 | total_source_refs=['attack-pattern--02ea7626-0eec-5a4b-98ff-b3f21733b783', 'attack-pattern--cf1a7a78-0509-59a6-a8a4-35d9e1e966a4']
+2026-06-18 20:09:00 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.DATA_SOURCES | total_reasons=2 | total_source_refs=['attack-pattern--88a794e9-fa8c-5185-a677-bf476cd8890b', 'attack-pattern--8eb979a1-1e5a-5955-8a7d-df82ecb14088']
+2026-06-18 20:09:00 | INFO     | ProcessStrategy | Postprocessed LLM results | total_processed_results=5
+2026-06-18 20:09:42 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 20:09:42 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 20:09:54 | INFO     | ProcessStrategy | LLM classification completed | total_results=10
+2026-06-18 20:09:54 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.UI | total_reasons=1 | total_source_refs=['attack-pattern--4f36677b-3ba6-5556-9eba-0a2311796803']
+2026-06-18 20:09:54 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.APPLICATION | total_reasons=2 | total_source_refs=['attack-pattern--c02f812d-59cc-5366-b1aa-7eb05154b772', 'attack-pattern--a8393765-c78b-5bd3-8f92-74579e8f5a9f']
+2026-06-18 20:09:54 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.MODEL | total_reasons=3 | total_source_refs=['attack-pattern--518338b9-9239-5e02-95f5-146bc758520f', 'attack-pattern--bbffbb39-c270-5822-8786-7bbab1a43dc3', 'attack-pattern--deca63a5-2a52-54ea-abe5-2cd7089d46e4']
+2026-06-18 20:09:54 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.INFRASTRUCTURE | total_reasons=2 | total_source_refs=['attack-pattern--02ea7626-0eec-5a4b-98ff-b3f21733b783', 'attack-pattern--cf1a7a78-0509-59a6-a8a4-35d9e1e966a4']
+2026-06-18 20:09:54 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.DATA_SOURCES | total_reasons=2 | total_source_refs=['attack-pattern--88a794e9-fa8c-5185-a677-bf476cd8890b', 'attack-pattern--8eb979a1-1e5a-5955-8a7d-df82ecb14088']
+2026-06-18 20:09:54 | INFO     | ProcessStrategy | Postprocessed LLM results | total_processed_results=5
+2026-06-18 20:09:54 | INFO     | ProcessStrategy | Created relationships between tactics and layers | total_relationships=10
+2026-06-18 23:14:32 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 23:14:32 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 23:18:59 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 23:18:59 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 23:23:49 | INFO     | ProcessStrategy | Preprocessed data for advanced processing | total_techniques=170 | total_tactics=16
+2026-06-18 23:23:49 | INFO     | ProcessStrategy | Preprocessed data for LLM classification | total_tactics=170
+2026-06-18 23:24:40 | INFO     | ProcessStrategy | LLM classification completed | total_results=50
+2026-06-18 23:24:40 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.UI | total_reasons=3 | total_source_refs=['attack-pattern--4f36677b-3ba6-5556-9eba-0a2311796803', 'attack-pattern--e0774a36-8183-5b12-a76c-492b904f32d7', 'attack-pattern--5010d920-1568-56ee-ae3e-18fcf145fa40']
+2026-06-18 23:24:40 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.APPLICATION | total_reasons=11 | total_source_refs=['attack-pattern--c02f812d-59cc-5366-b1aa-7eb05154b772', 'attack-pattern--a8393765-c78b-5bd3-8f92-74579e8f5a9f', 'attack-pattern--3b4f64bf-fb3a-53ee-ac26-d5783e0f9001', 'attack-pattern--cbebfc30-9124-5c7e-915c-d4af59ddb34e', 'attack-pattern--b14fb0a1-a329-5982-a44c-c5da0b458d39', 'attack-pattern--88ed7595-57b1-547d-8de1-436641bda943', 'attack-pattern--08fd47ac-8b5f-5c0b-8b1d-8e915351cdc2', 'attack-pattern--4480d7c5-7096-5360-8b2a-875cf4b710ea', 'attack-pattern--e249e479-eb89-5082-a51e-e862d705ec1d', 'attack-pattern--07ba3218-6e26-5eed-8017-4a2e8c0cbd5d', 'attack-pattern--55ad0ff6-ab08-5ea5-8204-aaa28578d805']
+2026-06-18 23:24:40 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.MODEL | total_reasons=15 | total_source_refs=['attack-pattern--518338b9-9239-5e02-95f5-146bc758520f', 'attack-pattern--bbffbb39-c270-5822-8786-7bbab1a43dc3', 'attack-pattern--deca63a5-2a52-54ea-abe5-2cd7089d46e4', 'attack-pattern--d229d87c-9400-53f0-bca3-b9514fd9227f', 'attack-pattern--43d26237-62d6-5e56-9252-18af7c9ff7ae', 'attack-pattern--159106db-413f-5f36-854f-09729ed0a18f', 'attack-pattern--5a78e20f-c159-58bf-8dae-81d0f5f9548b', 'attack-pattern--3bf297c5-2ab2-573a-aa4e-f20af3d2643c', 'attack-pattern--ffd308bb-3c90-550a-b3d4-f22f310f96d8', 'attack-pattern--386bf4df-e7c7-54da-a297-fec4ffd5e1a8', 'attack-pattern--3b83b5ba-6855-592b-82a0-9bef7c6b0c7b', 'attack-pattern--94e1836d-1749-5d64-8f2f-de06a218ded7', 'attack-pattern--80a54397-082c-5d02-9d2e-1d30d7375c75', 'attack-pattern--0bbf1c2c-1dd0-5376-8119-1ee01b910f69', 'attack-pattern--a1494aa9-35bb-52b4-bd73-15444dc04706']
+2026-06-18 23:24:40 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.INFRASTRUCTURE | total_reasons=7 | total_source_refs=['attack-pattern--02ea7626-0eec-5a4b-98ff-b3f21733b783', 'attack-pattern--cf1a7a78-0509-59a6-a8a4-35d9e1e966a4', 'attack-pattern--6a4ccafa-0e03-5e98-b8cd-5fccc68409d4', 'attack-pattern--855d14fa-795d-5000-9116-3b54d49f42ea', 'attack-pattern--ca5a090b-feaf-575d-98c6-61930fffc5b5', 'attack-pattern--aac7fa8d-c943-5fec-a01f-cd4d14184395', 'attack-pattern--f321adfd-7fd1-5a86-91e0-c8aa32fbe421']
+2026-06-18 23:24:40 | INFO     | ProcessStrategy | Processing LLM results for label | label=ValidLabel.DATA_SOURCES | total_reasons=14 | total_source_refs=['attack-pattern--88a794e9-fa8c-5185-a677-bf476cd8890b', 'attack-pattern--8eb979a1-1e5a-5955-8a7d-df82ecb14088', 'attack-pattern--298dc6c6-5683-5475-b724-2a2a3db3a7dc', 'attack-pattern--0855cdf6-5b4f-5586-a658-942b7222ede7', 'attack-pattern--2bc7b6ec-2304-5913-8b0c-bb92ba135724', 'attack-pattern--647ac4ac-b2bc-53f7-ab83-81f421a1f0b5', 'attack-pattern--2ea180c5-5df4-5815-8c78-a1cec1da6e18', 'attack-pattern--1a1c3b28-eeab-52d0-87cf-4ba0a7ff687a', 'attack-pattern--757f3580-72e6-514d-9770-af3ee98a1a0b', 'attack-pattern--a5cc5062-f672-510a-8a4f-a8d1aa7f5024', 'attack-pattern--ed66b442-059b-54cb-a806-620e6f8109a6', 'attack-pattern--d74153d6-ac3c-52fb-9847-e0a6f675cd93', 'attack-pattern--6635775c-5539-5512-95f1-a0e085770699', 'attack-pattern--04641d66-7ecd-5b83-a3da-938e11a81254']
+2026-06-18 23:24:40 | INFO     | ProcessStrategy | Postprocessed LLM results | total_processed_results=5
+2026-06-18 23:24:40 | INFO     | ProcessStrategy | Created relationships between tactics and layers | total_relationships=50

@@ -1,0 +1,122 @@
+2026-06-18 23:27:33 | INFO     | ChatPipeline | finish generating query
+2026-06-18 23:32:13 | INFO     | ChatPipeline | finish generating query
+2026-06-18 23:33:29 | INFO     | ChatPipeline | finish generating query
+2026-06-18 23:33:29 | INFO     | ChatPipeline | Generated LLM query | query=relation=<ValidRelationshipType.USES: 'uses'> node_a=<ValidNodeType.DATA_SOURCES: 'data_sources'> node_b=<ValidNodeType.TACTIC: 'tactic'>
+2026-06-18 23:35:11 | INFO     | ChatPipeline | finish generating query
+2026-06-18 23:35:11 | INFO     | ChatPipeline | Generated LLM query | query=relation=<ValidRelationshipType.USES: 'uses'> node_a=<ValidNodeType.DATA_SOURCES: 'data_sources'> node_b=<ValidNodeType.TACTIC: 'tactic'>
+2026-06-18 23:35:11 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-18 23:36:51 | INFO     | ChatPipeline | finish generating query
+2026-06-18 23:36:51 | INFO     | ChatPipeline | Generated LLM query | query=relation=<ValidRelationshipType.USES: 'uses'> node_a=<ValidNodeType.DATA_SOURCES: 'data_sources'> node_b=<ValidNodeType.TACTIC: 'tactic'>
+2026-06-18 23:36:51 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-18 23:39:49 | INFO     | ChatPipeline | finish generating query
+2026-06-18 23:39:49 | INFO     | ChatPipeline | Generated LLM query | query=
+        // 1. Find the anchor relationship matching the LLM intent
+        MATCH path = (anchor_a:data_sources)-[:uses]->(anchor_b:tactic)
+        
+        // 2. Expand outward from both ends of the anchor path up to N hops
+        MATCH multi_path = (anchor_a)-[*0..2]-(connected_node)
+        WITH path, multi_path
+        MATCH secondary_path = (anchor_b)-[*0..2]-(connected_node_b)
+        
+        // 3. Gather all distinct paths into a single sequence pool
+        WITH collect(path) + collect(multi_path) + collect(secondary_path) AS all_paths
+        UNWIND all_paths AS p
+        
+        // 4. Extract individual structural components to flatten the graph layout
+        UNWIND nodes(p) AS n
+        UNWIND relationships(p) AS rel
+        
+        // 5. Return distinct triples so your postprocessor maps them cleanly
+        RETURN DISTINCT 
+            startNode(rel) AS a, 
+            rel AS r, 
+            endNode(rel) AS b
+        
+2026-06-18 23:39:49 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-18 23:53:53 | INFO     | ChatPipeline | finish generating query
+2026-06-18 23:53:53 | INFO     | ChatPipeline | Generated LLM query | query=
+        // 1. Find the anchor relationship matching the LLM intent
+        MATCH path = (anchor_a:data_sources)-[:uses]->(anchor_b:technique)
+        
+        // 2. Expand outward from both ends of the anchor path up to N hops
+        MATCH multi_path = (anchor_a)-[*0..2]-(connected_node)
+        WITH path, multi_path
+        MATCH secondary_path = (anchor_b)-[*0..2]-(connected_node_b)
+        
+        // 3. Gather all distinct paths into a single sequence pool
+        WITH collect(path) + collect(multi_path) + collect(secondary_path) AS all_paths
+        UNWIND all_paths AS p
+        
+        // 4. Extract individual structural components to flatten the graph layout
+        UNWIND nodes(p) AS n
+        UNWIND relationships(p) AS rel
+        
+        // 5. Return distinct triples so your postprocessor maps them cleanly
+        RETURN DISTINCT 
+            startNode(rel) AS a, 
+            rel AS r, 
+            endNode(rel) AS b
+        
+2026-06-18 23:53:53 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-18 23:55:52 | INFO     | ChatPipeline | finish generating query
+2026-06-18 23:55:52 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-18 23:55:52 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-18 23:56:38 | INFO     | ChatPipeline | finish generating query
+2026-06-18 23:56:38 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-18 23:56:38 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-18 23:56:38 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:00:24 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:00:24 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:00:24 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:00:24 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:00:37 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:00:37 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:00:37 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:00:37 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:02:55 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:02:56 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:02:56 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:02:56 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:03:06 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:03:06 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:03:06 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:03:06 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:03:19 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:03:19 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:03:19 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:03:19 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:15:02 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:15:02 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:15:02 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:15:02 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:15:04 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:15:04 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:15:04 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:15:04 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:15:15 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:15:15 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:15:15 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:15:15 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:16:34 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:16:34 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:16:34 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:16:34 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:16:36 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:16:36 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:16:36 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:16:36 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:17:21 | INFO     | ChatPipeline | finish generating query
+2026-06-19 00:17:21 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:17:21 | INFO     | ChatPipeline | Query executed and data retrieved | total_records=[]
+2026-06-19 00:17:21 | WARNING  | ChatPipeline | No data returned from the database for the generated query.
+2026-06-19 00:17:58 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:22:23 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=14
+2026-06-19 00:22:40 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=14
+2026-06-19 00:22:47 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:23:14 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=3
+2026-06-19 00:23:20 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=3
+2026-06-19 00:23:31 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=169
+2026-06-19 00:26:40 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=14
+2026-06-19 00:27:40 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=0
+2026-06-19 00:28:33 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=3
+2026-06-19 00:29:10 | INFO     | ChatPipeline | Executed query against Neo4j | total_records=169

@@ -241,3 +241,255 @@
 2026-06-18 13:10:39 | INFO     | ETL | Data loaded into Neo4j | relationships=449
 2026-06-18 13:10:39 | INFO     | ETL | Preparing to load relationships | relationship_type=uses_tactic | count=170
 2026-06-18 13:10:39 | INFO     | ETL | Data loaded into Neo4j | relationships=170
+2026-06-18 17:36:28 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:36:28 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:36:28 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:36:28 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:36:28 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:36:28 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:37:16 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:37:16 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:37:16 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:37:16 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:37:16 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:37:16 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:38:11 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:38:11 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:38:11 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:38:11 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:38:11 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:38:11 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:51:41 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:51:41 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:51:41 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:51:41 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:51:41 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:51:41 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:52:09 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:52:09 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:52:09 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:52:09 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:52:09 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:52:09 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:53:53 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:53:53 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:53:53 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:53:53 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:53:53 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:53:53 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:56:25 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:56:25 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:56:25 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:56:25 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:56:25 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:56:25 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:58:21 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:58:21 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:58:21 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:58:21 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:58:21 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:58:21 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:58:32 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:58:32 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:58:32 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:58:32 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:58:32 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:58:32 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:58:57 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:58:57 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:58:57 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:58:57 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:58:57 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:58:57 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 17:59:17 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 17:59:17 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 17:59:17 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 17:59:17 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 17:59:17 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 17:59:17 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 18:02:48 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 18:02:48 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 18:02:48 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 18:02:48 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 18:02:48 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 18:02:48 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 18:04:50 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 18:04:50 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 18:04:50 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 18:04:50 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 18:04:50 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 18:04:50 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 18:11:49 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 18:11:49 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 18:11:49 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 18:11:49 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 18:11:49 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 18:11:49 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 18:14:03 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 18:14:03 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 18:14:03 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 18:14:03 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 18:14:03 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 18:14:03 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 18:19:09 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 18:19:09 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 18:19:09 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 18:19:09 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 18:19:09 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 18:19:09 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 18:34:31 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 18:34:31 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 18:34:31 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 18:34:31 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 18:34:31 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 18:34:31 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 19:00:41 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:00:41 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:00:41 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:00:41 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:00:41 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:00:41 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 19:01:20 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:01:20 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:01:20 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:01:20 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:01:20 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:01:20 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 19:17:36 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:17:36 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:17:36 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:17:36 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:17:36 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:17:36 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 19:19:06 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:19:06 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:19:06 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:19:06 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:19:06 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:19:06 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 19:20:40 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:20:40 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:20:40 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:20:40 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:20:40 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:20:40 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 19:41:44 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:41:44 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:41:44 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:41:44 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:41:44 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:41:44 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 19:47:40 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:47:40 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:47:40 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:47:40 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:47:40 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:47:40 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 19:50:16 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:50:16 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:50:16 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:50:16 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:50:16 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:50:16 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 19:53:14 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 19:53:14 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 19:53:14 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 19:53:14 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 19:53:14 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 19:53:14 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 20:06:31 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 20:06:31 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 20:06:31 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 20:06:31 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 20:06:31 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 20:06:31 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 20:08:49 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 20:08:49 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 20:08:49 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 20:08:49 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 20:08:49 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 20:08:49 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 20:09:42 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 20:09:42 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 20:09:42 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 20:09:42 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 20:09:42 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 20:09:42 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 20:09:54 | INFO     | ETL | Extending entities and relations with target components {target_entities} {target_relations} | total_target_entities=5 | total_target_relationships=10
+2026-06-18 20:09:54 | INFO     | ETL | Starting loding phase
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=16
+2026-06-18 20:09:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=16
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=170
+2026-06-18 20:09:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=170
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=35
+2026-06-18 20:09:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=35
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=57
+2026-06-18 20:09:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=57
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load nodes | node_type=ui | count=1
+2026-06-18 20:09:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load nodes | node_type=application | count=1
+2026-06-18 20:09:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load nodes | node_type=model | count=1
+2026-06-18 20:09:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load nodes | node_type=infrastructure | count=1
+2026-06-18 20:09:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load nodes | node_type=data_sources | count=1
+2026-06-18 20:09:54 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load relationships | relationship_type=subtechnique_of | count=69
+2026-06-18 20:09:54 | INFO     | ETL | Data loaded into Neo4j | relationships=69
+2026-06-18 20:09:54 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigates | count=246
+2026-06-18 20:09:55 | INFO     | ETL | Data loaded into Neo4j | relationships=246
+2026-06-18 20:09:55 | INFO     | ETL | Preparing to load relationships | relationship_type=uses | count=449
+2026-06-18 20:09:55 | INFO     | ETL | Data loaded into Neo4j | relationships=449
+2026-06-18 20:09:55 | INFO     | ETL | Preparing to load relationships | relationship_type=uses_tactic | count=170
+2026-06-18 20:09:55 | INFO     | ETL | Data loaded into Neo4j | relationships=170
+2026-06-18 20:09:55 | INFO     | ETL | Preparing to load relationships | relationship_type=Target | count=10
+2026-06-18 20:09:55 | INFO     | ETL | Data loaded into Neo4j | relationships=10
+2026-06-18 23:14:31 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 23:14:32 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 23:14:32 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 23:14:32 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 23:14:32 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 23:14:32 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 23:18:59 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 23:18:59 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 23:18:59 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 23:18:59 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 23:18:59 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 23:18:59 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 23:23:49 | INFO     | ETL | Processing data in parallel | total_records=1044 | chunk_size=100 | total_chunks=11
+2026-06-18 23:23:49 | INFO     | ETL | Completed parallel processing | total_chunks=11
+2026-06-18 23:23:49 | INFO     | ETL | Completed advanced processing | total_advanced_chunks=1
+2026-06-18 23:23:49 | INFO     | ETL | ->Advanced processing results | total_advanced_relations=170
+2026-06-18 23:23:49 | INFO     | ETL | Data processing completed, starting load phase | total_entities=278 | total_relationships=934
+2026-06-18 23:23:49 | INFO     | ETL | Creating target components (layers and relationships)
+2026-06-18 23:24:40 | INFO     | ETL | Extending entities and relations with target components {target_entities} {target_relations} | total_target_entities=5 | total_target_relationships=50
+2026-06-18 23:24:40 | INFO     | ETL | Starting loding phase
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load nodes | node_type=tactic | count=16
+2026-06-18 23:24:40 | INFO     | ETL | Nodes loaded into Neo4j | nodes=16
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load nodes | node_type=technique | count=170
+2026-06-18 23:24:40 | INFO     | ETL | Nodes loaded into Neo4j | nodes=170
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load nodes | node_type=mitigation | count=35
+2026-06-18 23:24:40 | INFO     | ETL | Nodes loaded into Neo4j | nodes=35
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load nodes | node_type=casestudy | count=57
+2026-06-18 23:24:40 | INFO     | ETL | Nodes loaded into Neo4j | nodes=57
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load nodes | node_type=ui | count=1
+2026-06-18 23:24:40 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load nodes | node_type=application | count=1
+2026-06-18 23:24:40 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load nodes | node_type=model | count=1
+2026-06-18 23:24:40 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load nodes | node_type=infrastructure | count=1
+2026-06-18 23:24:40 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load nodes | node_type=data_sources | count=1
+2026-06-18 23:24:40 | INFO     | ETL | Nodes loaded into Neo4j | nodes=1
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load relationships | relationship_type=subtechnique_of | count=69
+2026-06-18 23:24:40 | INFO     | ETL | Data loaded into Neo4j | relationships=69
+2026-06-18 23:24:40 | INFO     | ETL | Preparing to load relationships | relationship_type=mitigates | count=246
+2026-06-18 23:24:41 | INFO     | ETL | Data loaded into Neo4j | relationships=246
+2026-06-18 23:24:41 | INFO     | ETL | Preparing to load relationships | relationship_type=uses | count=449
+2026-06-18 23:24:41 | INFO     | ETL | Data loaded into Neo4j | relationships=449
+2026-06-18 23:24:41 | INFO     | ETL | Preparing to load relationships | relationship_type=uses_tactic | count=170
+2026-06-18 23:24:41 | INFO     | ETL | Data loaded into Neo4j | relationships=170
+2026-06-18 23:24:41 | INFO     | ETL | Preparing to load relationships | relationship_type=Target | count=50
+2026-06-18 23:24:41 | INFO     | ETL | Data loaded into Neo4j | relationships=50

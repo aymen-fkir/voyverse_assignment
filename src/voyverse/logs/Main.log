@@ -263,3 +263,1638 @@ neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.Synta
 2026-06-18 12:53:59 | INFO     | Main | Neo4j connection closed
 2026-06-18 12:57:51 | INFO     | Main | Neo4j connection closed
 2026-06-18 13:10:39 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:36:29 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 173, in classify
+    llm_classifier = LLMClassification(model_name=settings.model_name, chunk_size=settings.chunk_size)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 10, in __init__
+    self.system_prompt = load_prompt("llm_classification")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/utils/helper.py", line 18, in load_prompt
+    raise FileNotFoundError(f"Prompt file {prompt_path} not found.")
+FileNotFoundError: Prompt file /home/aymen/Desktop/my_work/voyverse/prompts/llm_classification.txt not found.
+2026-06-18 17:36:29 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:37:17 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 173, in classify
+    llm_classifier = LLMClassification(model_name=settings.model_name, chunk_size=settings.chunk_size)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 10, in __init__
+    self.system_prompt = load_prompt("llm_classification")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/utils/helper.py", line 18, in load_prompt
+    raise FileNotFoundError(f"Prompt file {prompt_path} not found.")
+FileNotFoundError: Prompt file /home/aymen/Desktop/my_work/voyverse/prompts/llm_classification.txt not found.
+2026-06-18 17:37:17 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:45:50 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:51:41 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 173, in classify
+    llm_classifier = LLMClassification(model_name=settings.model_name, chunk_size=settings.chunk_size)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 20, in __init__
+    self.client = AsyncClient(
+                  ^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 725, in __init__
+    super().__init__(httpx.AsyncClient, host, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 112, in __init__
+    self._client = client(
+                   ^^^^^^^
+TypeError: httpx.AsyncClient() got multiple values for keyword argument 'base_url'
+2026-06-18 17:51:41 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:52:45 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:54:25 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 53, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 44, in classify
+    return LlmOutputList.model_validate_json(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 782, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 10 validation errors for LlmOutputList
+root.0.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.1.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.2.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.3.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.4.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.5.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.6.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.7.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.8.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.9.label
+  Value error, Invalid label: Rooftop. Must be one of {'ui', 'data_sources', 'application', 'infrastructure', 'model'}. [type=value_error, input_value='Rooftop', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-06-18 17:54:25 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:56:32 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 53, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 30, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model runner has unexpectedly stopped, this may be due to resource limitations or an internal error, check ollama server logs for details (status code: 500)
+2026-06-18 17:56:32 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:58:21 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 53, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 30, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: server busy, please try again.  maximum pending requests exceeded (status code: 503)
+2026-06-18 17:58:21 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:58:32 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 53, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 30, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: server busy, please try again.  maximum pending requests exceeded (status code: 503)
+2026-06-18 17:58:32 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:58:57 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 53, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 30, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: server busy, please try again.  maximum pending requests exceeded (status code: 503)
+2026-06-18 17:58:57 | INFO     | Main | Neo4j connection closed
+2026-06-18 17:59:17 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 53, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 30, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: server busy, please try again.  maximum pending requests exceeded (status code: 503)
+2026-06-18 17:59:17 | INFO     | Main | Neo4j connection closed
+2026-06-18 18:02:54 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 62, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 59, in semaphored_classify
+    return await self.classify(chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 30, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model runner has unexpectedly stopped, this may be due to resource limitations or an internal error, check ollama server logs for details (status code: 500)
+2026-06-18 18:02:54 | INFO     | Main | Neo4j connection closed
+2026-06-18 18:05:15 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 62, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 59, in semaphored_classify
+    return await self.classify(chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 44, in classify
+    return LlmOutputList.model_validate_json(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 782, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 6 validation errors for LlmOutputList
+root.4.label
+  Value error, Invalid label: model_inference. Must be one of {'data_sources', 'model', 'application', 'infrastructure', 'ui'}. [type=value_error, input_value='model_inference', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.5.label
+  Value error, Invalid label: data_retention. Must be one of {'data_sources', 'model', 'application', 'infrastructure', 'ui'}. [type=value_error, input_value='data_retention', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.6.label
+  Value error, Invalid label: infrastructure_provisioning. Must be one of {'data_sources', 'model', 'application', 'infrastructure', 'ui'}. [type=value_error, input_value='infrastructure_provisioning', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.7.label
+  Value error, Invalid label: AI_artifact_management. Must be one of {'data_sources', 'model', 'application', 'infrastructure', 'ui'}. [type=value_error, input_value='AI_artifact_management', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.8.label
+  Value error, Invalid label: reverse_engineering. Must be one of {'data_sources', 'model', 'application', 'infrastructure', 'ui'}. [type=value_error, input_value='reverse_engineering', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+root.9.label
+  Value error, Invalid label: open_source_tools. Must be one of {'data_sources', 'model', 'application', 'infrastructure', 'ui'}. [type=value_error, input_value='open_source_tools', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-06-18 18:05:15 | INFO     | Main | Neo4j connection closed
+2026-06-18 18:12:12 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 62, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 59, in semaphored_classify
+    return await self.classify(chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 30, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model runner has unexpectedly stopped, this may be due to resource limitations or an internal error, check ollama server logs for details (status code: 500)
+2026-06-18 18:12:12 | INFO     | Main | Neo4j connection closed
+2026-06-18 18:17:59 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    raise exc
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 62, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 59, in semaphored_classify
+    return await self.classify(chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 30, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 732, in _request_raw
+    r = await self._client.request(*args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+2026-06-18 18:17:59 | INFO     | Main | Neo4j connection closed
+2026-06-18 18:30:48 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 61, in run
+    results: list[LlmOutputList] = await asyncio.gather(
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 58, in semaphored_classify
+    return await self.classify(chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 43, in classify
+    return LlmOutputList.model_validate_json(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 782, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for LlmOutputList
+  Invalid JSON: EOF while parsing a string at line 1908 column 57 [type=json_invalid, input_value='{\n"root": [{"label": "a...son": "The descriptions', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid
+2026-06-18 18:30:48 | INFO     | Main | Neo4j connection closed
+2026-06-18 18:46:11 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(texts))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 62, in run
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 59, in semaphored_classify
+    # 1. Initialize a semaphore to cap concurrent requests to Ollama
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 44, in classify
+    return LlmOutputList.model_validate_json(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 782, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for LlmOutputList
+  Invalid JSON: EOF while parsing a string at line 1908 column 57 [type=json_invalid, input_value='{\n"root": [{"label": "a...son": "The descriptions', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid
+2026-06-18 18:46:11 | INFO     | Main | Neo4j connection closed
+2026-06-18 19:00:42 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(input_to_llm))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 80, in run
+    results: list[Union[LlmOutputList,list]] = await asyncio.gather(
+                                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 77, in semaphored_classify
+    return await self.classify(chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 30, in classify
+    lines = [f"\n- Description: '{text.description.strip()}'" for text in texts]
+                                  ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'description'
+2026-06-18 19:00:42 | INFO     | Main | Neo4j connection closed
+2026-06-18 19:12:57 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(input_to_llm))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 79, in run
+    results: list[Union[LlmOutputList,list]] = await asyncio.gather(
+                                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 76, in semaphored_classify
+    return await self.classify(chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 48, in classify
+    return LlmOutputList.model_validate_json(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 782, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for LlmOutputList
+  Invalid JSON: EOF while parsing a string at line 1908 column 57 [type=json_invalid, input_value='{\n"root": [{"label": "a...son": "The descriptions', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid
+2026-06-18 19:12:57 | INFO     | Main | Neo4j connection closed
+2026-06-18 19:17:56 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    raise exc
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(input_to_llm))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 85, in run
+    results: list[Union[LlmOutputList,list]] = await asyncio.gather(
+                                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 82, in semaphored_classify
+    return await self.classify(chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 33, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 732, in _request_raw
+    r = await self._client.request(*args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+2026-06-18 19:17:56 | INFO     | Main | Neo4j connection closed
+2026-06-18 19:20:06 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    raise exc
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 199, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 175, in classify
+    results = asyncio.run(llm_classifier.run(input_to_llm))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 85, in run
+    results: list[Union[LlmOutputList,list]] = await asyncio.gather(
+                                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 82, in semaphored_classify
+    return await self.classify(chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 33, in classify
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 732, in _request_raw
+    r = await self._client.request(*args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+2026-06-18 19:20:06 | INFO     | Main | Neo4j connection closed
+2026-06-18 19:32:29 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 201, in run
+    processed_results = CreateTargetLayers.postprocess(llm_results, tactics)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 186, in postprocess
+    grouped[item.label]["source_refs"].append(tactics[i].id)
+                                              ~~~~~~~^^^
+IndexError: list index out of range
+2026-06-18 19:32:29 | INFO     | Main | Neo4j connection closed
+2026-06-18 19:44:22 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 200, in run
+    processed_results = CreateTargetLayers.postprocess(llm_results)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 189, in postprocess
+    processed_results.append(ProcessedLlmOutput(label=label,
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for ProcessedLlmOutput
+source_ref.21
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+source_ref.28
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-06-18 19:44:22 | INFO     | Main | Neo4j connection closed
+2026-06-18 19:47:53 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 201, in run
+    processed_results = CreateTargetLayers.postprocess(llm_results)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 190, in postprocess
+    processed_results.append(ProcessedLlmOutput(label=label,
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ProcessedLlmOutput
+source_ref.3
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-06-18 19:47:53 | INFO     | Main | Neo4j connection closed
+2026-06-18 19:50:29 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 201, in run
+    processed_results = CreateTargetLayers.postprocess(llm_results)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 190, in postprocess
+    processed_results.append(ProcessedLlmOutput(label=label,
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ProcessedLlmOutput
+source_ref.3
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-06-18 19:50:29 | INFO     | Main | Neo4j connection closed
+2026-06-18 19:53:27 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 201, in run
+    processed_results = CreateTargetLayers.postprocess(llm_results)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 190, in postprocess
+    processed_results.append(ProcessedLlmOutput(label=label,
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ProcessedLlmOutput
+source_ref.3
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-06-18 19:53:27 | INFO     | Main | Neo4j connection closed
+2026-06-18 20:06:42 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 205, in run
+    layers_nodes = CreateTargetLayers.create_node()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 130, in create_node
+    node = Node(
+           ^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Node
+type
+  Value error, Invalid type: ui. Must be one of {'mitigation', 'technique', 'casestudy', 'tactic'}. [type=value_error, input_value='ui', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-06-18 20:06:42 | INFO     | Main | Neo4j connection closed
+2026-06-18 20:09:00 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 18, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 207, in run
+    relationships = CreateTargetLayers.create_relationships(processed_results, layers_dict)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 148, in create_relationships
+    relation = Relationship(
+               ^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Relationship
+relationship_type
+  Value error, Invalid relationship type: Target. Must be one of {'uses_tactic', 'uses', 'mitigates', 'subtechnique_of'}. [type=value_error, input_value='Target', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-06-18 20:09:00 | INFO     | Main | Neo4j connection closed
+2026-06-18 20:09:55 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:15:23 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 21, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 201, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 174, in classify
+    results = asyncio.run(llm_classifier.run(input_to_llm))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 90, in run
+    merged = self.postprocess(results,input_to_llm)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 65, in postprocess
+    return LlmOutputList(root=gathered_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for LlmOutputList
+root
+  List should have at most 10 items after validation, not 50 [type=too_long, input_value=[LlmOutput(label=<ValidLa...ea5-8204-aaa28578d805')], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/too_long
+2026-06-18 23:15:23 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:19:50 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 21, in main
+    pipeline.run()
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 126, in run
+    target_entities, target_relations = self.create_target_components(entities)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/pipeline/etl.py", line 35, in create_target_components
+    return strategy.run(data)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 201, in run
+    llm_results = CreateTargetLayers.classify(tactics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/process_strategy.py", line 174, in classify
+    results = asyncio.run(llm_classifier.run(input_to_llm))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 90, in run
+    merged = self.postprocess(results,input_to_llm)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/ingest/process/llm_classification.py", line 65, in postprocess
+    return LlmOutputList(root=gathered_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for LlmOutputList
+root
+  List should have at most 10 items after validation, not 50 [type=too_long, input_value=[LlmOutput(label=<ValidLa...ea5-8204-aaa28578d805')], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/too_long
+2026-06-18 23:19:50 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:24:41 | INFO     | Main | model gemma3:1b read to chat .
+2026-06-18 23:27:34 | ERROR    | Main | An error occurred during the ETL process
+neo4j.exceptions.GqlError: {gql_status: 42I06} {gql_status_description: error: syntax error or access rule violation - invalid input. Invalid input '.', expected: a parameter, '&', ')', ':', 'WHERE', '{' or '|'.} {message: 42I06: Invalid input '.', expected: a parameter, '&', ')', ':', 'WHERE', '{' or '|'.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', '_position': {'column': 45, 'line': 3, 'offset': 112}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 28, in main
+    response = chat_pipeline.chat(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 152, in chat
+    data = self.execute_query(query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 81, in execute_query
+    result = self.connection.query(query)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 19, in query
+    result = session.run(query_param, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 338, in run
+    auto_result._run(
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '.': expected a parameter, '&', ')', ':', 'WHERE', '{' or '|' (line 3, column 45 (offset: 112))
+"        MATCH path = (anchor_a:ValidNodeType.DATA_SOURCES)-[:ValidRelationshipType.USES]->(anchor_b:ValidNodeType.TACTIC)"
+                                             ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-18 23:27:34 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:32:13 | ERROR    | Main | An error occurred during the ETL process
+neo4j.exceptions.GqlError: {gql_status: 42I06} {gql_status_description: error: syntax error or access rule violation - invalid input. Invalid input '.', expected: a parameter, '&', ')', ':', 'WHERE', '{' or '|'.} {message: 42I06: Invalid input '.', expected: a parameter, '&', ')', ':', 'WHERE', '{' or '|'.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', '_position': {'column': 45, 'line': 3, 'offset': 112}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 29, in main
+    response = chat_pipeline.chat(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 152, in chat
+    data = self.execute_query(query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 81, in execute_query
+    result = self.connection.query(query)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 19, in query
+    result = session.run(query_param, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 338, in run
+    auto_result._run(
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '.': expected a parameter, '&', ')', ':', 'WHERE', '{' or '|' (line 3, column 45 (offset: 112))
+"        MATCH path = (anchor_a:ValidNodeType.DATA_SOURCES)-[:ValidRelationshipType.USES]->(anchor_b:ValidNodeType.TACTIC)"
+                                             ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-18 23:32:13 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:33:29 | ERROR    | Main | An error occurred during the ETL process
+neo4j.exceptions.GqlError: {gql_status: 42I06} {gql_status_description: error: syntax error or access rule violation - invalid input. Invalid input '.', expected: a parameter, '&', ')', ':', 'WHERE', '{' or '|'.} {message: 42I06: Invalid input '.', expected: a parameter, '&', ')', ':', 'WHERE', '{' or '|'.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', '_position': {'column': 45, 'line': 3, 'offset': 112}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 29, in main
+    response = chat_pipeline.chat(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 153, in chat
+    data = self.execute_query(query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 81, in execute_query
+    result = self.connection.query(query)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/internals/database.py", line 19, in query
+    result = session.run(query_param, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 338, in run
+    auto_result._run(
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '.': expected a parameter, '&', ')', ':', 'WHERE', '{' or '|' (line 3, column 45 (offset: 112))
+"        MATCH path = (anchor_a:ValidNodeType.DATA_SOURCES)-[:ValidRelationshipType.USES]->(anchor_b:ValidNodeType.TACTIC)"
+                                             ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+2026-06-18 23:33:29 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:35:11 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 29, in main
+    response = chat_pipeline.chat(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 155, in chat
+    final_response = self.send_to_llm(formatted_output, user_input)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 136, in send_to_llm
+    response = asyncio.run(self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 732, in _request_raw
+    r = await self._client.request(*args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 135, in handle_async_request
+    await self._response_closed()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 250, in _response_closed
+    await self.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1374, in aclose
+    self._transport.close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1211, in close
+    super().close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 875, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 795, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 541, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2026-06-18 23:35:11 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:36:51 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 29, in main
+    response = chat_pipeline.chat(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 163, in chat
+    final_response = self.send_to_llm(formatted_output, user_input)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 144, in send_to_llm
+    response = asyncio.run(self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 732, in _request_raw
+    r = await self._client.request(*args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 135, in handle_async_request
+    await self._response_closed()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 250, in _response_closed
+    await self.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1374, in aclose
+    self._transport.close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1211, in close
+    super().close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 875, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 795, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 541, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2026-06-18 23:36:51 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:39:49 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 29, in main
+    response = chat_pipeline.chat(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 163, in chat
+    final_response = self.send_to_llm(formatted_output, user_input)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 144, in send_to_llm
+    response = asyncio.run(self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 732, in _request_raw
+    r = await self._client.request(*args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 135, in handle_async_request
+    await self._response_closed()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 250, in _response_closed
+    await self.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1374, in aclose
+    self._transport.close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1211, in close
+    super().close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 875, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 795, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 541, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2026-06-18 23:39:49 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:51:35 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 30, in main
+    response = asyncio.run(chat_pipeline.chat(user_input))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 154, in chat
+    llm_query = asyncio.run(self.generate_query_from_llm(prompt))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2026-06-18 23:51:35 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:55:36 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:56:22 | INFO     | Main | Neo4j connection closed
+2026-06-18 23:56:54 | ERROR    | Main | An error occurred during the ETL process
+Traceback (most recent call last):
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/main.py", line 30, in main
+    response = asyncio.run(chat_pipeline.chat(user_input))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 154, in chat
+    llm_query = await self.generate_query_from_llm(prompt)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/src/voyverse/chat/pipeline.py", line 31, in generate_query_from_llm
+    response = await self.client.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 913, in generate
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/ollama/_client.py", line 732, in _request_raw
+    r = await self._client.request(*args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 135, in handle_async_request
+    await self._response_closed()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 250, in _response_closed
+    await self.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "/home/aymen/Desktop/my_work/voyverse/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1374, in aclose
+    self._transport.close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1211, in close
+    super().close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 875, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 795, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 541, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2026-06-18 23:56:54 | INFO     | Main | Neo4j connection closed
+2026-06-19 00:03:22 | INFO     | Main | Neo4j connection closed
+2026-06-19 00:15:22 | INFO     | Main | Neo4j connection closed
+2026-06-19 00:17:38 | INFO     | Main | Neo4j connection closed
+2026-06-19 00:17:45 | INFO     | Main | Neo4j connection closed
+2026-06-19 00:25:20 | INFO     | Main | Neo4j connection closed
+2026-06-19 00:29:39 | INFO     | Main | Neo4j connection closed

@@ -1,10 +1,11 @@
 import uuid
 from datetime import datetime
-from typing import Any,TypeVar
+from typing import TypeVar
 from collections import defaultdict
-from utils.schemas import Node, Relationship
+from utils.schemas import GatheredData, Node, ProcessedLlmOutput, Relationship,LlmOutputList,ProcessedLlmOutputList,ValidLabel,InpuToLlm
 from utils.logger import VoyverseLogger
-
+from utils.config import settings
+import asyncio
 logger = VoyverseLogger.get("ProcessStrategy")
 
 class DummieProcessStrategy:
@@ -112,8 +113,101 @@ class TacticsTechniquesProcessStrategy:
         return relationships
 
 
-class CreateLayersNode:
-    pass
+class CreateTargetLayers:
+    
+    @staticmethod
+    def create_node() -> list[Node]:
+        
+        layers = {"ui":"UI Layer",
+         "application":"Application Layer",
+         "model":"Model Layer",
+         "infrastructure":"Infrastructure Layer",
+         "data_sources":"Data Sources Layer"}
+        
+        nodes: list[Node] = []
+        for layer in layers:
+            time = str(datetime.now())
+            node = Node(
+                type=layer,
+                id=f"node-{layer}-{str(uuid.uuid4())}",
+                created=time,
+                modified=time,
+                description=layers[layer]
+            )
+            nodes.append(node)
+
+        return nodes
+    
+    @staticmethod
+    def create_relationships(data:ProcessedLlmOutputList,layers: dict[str,str]) -> list[Relationship]:
+        relations = []
+        for item in data.root:
+            if item.label not in layers:
+                raise ValueError(f"Invalid label: {item.label}. Must be one of {list(layers.keys())}.")
+            for i,src in enumerate(item.source_ref):
+                relation = Relationship(
+                    type=f"Target-{item.label}",
+                    id=f"layer-{item.label}-{str(uuid.uuid4())}",
+                    source_ref=src,
+                    target_ref=layers[item.label],
+                    relationship_type="Target",
+                    created=str(datetime.now()),
+                    modified=str(datetime.now()),
+                    description=item.reason[i]
+                )
+                relations.append(relation)
+
+        return relations
+
+    @staticmethod
+    def preprocess(data:list[Node])->list[Node]:
+        result = []
+        for obj in data:
+            if obj.type == "technique":
+                result.append(obj)
+        return result
+    @staticmethod
+    def classify(data:list[Node]) -> GatheredData:
+        from ingest.process.llm_classification import LLMClassification
+        llm_classifier = LLMClassification(model_name=settings.model_name, chunk_size=settings.chunk_size)
+        input_to_llm = [InpuToLlm(description=item.description, id=item.id) for item in data]
+        results = asyncio.run(llm_classifier.run(input_to_llm))
+        return results
+    
+    @staticmethod
+    def postprocess(data:GatheredData) -> ProcessedLlmOutputList:
+        processed_results = []
+        grouped = {ValidLabel.UI: {"reasons": [],"source_refs": []}, ValidLabel.APPLICATION: {"reasons": [],"source_refs": []}, ValidLabel.MODEL: {"reasons": [],"source_refs": []}, ValidLabel.INFRASTRUCTURE: {"reasons": [],"source_refs": []}, ValidLabel.DATA_SOURCES: {"reasons": [],"source_refs": []}}
+        for i,item in enumerate(data.root):
+            if item.label not in grouped:
+                raise ValueError(f"Invalid label: {item.label}. Must be one of {list(grouped.keys())}.")
+            grouped[item.label]["reasons"].append(item.reason)
+            id_ = data.root[i].id
+            grouped[item.label]["source_refs"].append(id_)
+
+        
+        for label, content in grouped.items():
+            logger.info("Processing LLM results for label", label=label, total_reasons=len(content["reasons"]), total_source_refs=content["source_refs"])
+            if content["source_refs"]:  # Only add if there are source_refs
+                processed_results.append(ProcessedLlmOutput(label=label, 
+                                                            reason=content["reasons"], 
+                                                            source_ref=content["source_refs"]))
+        return ProcessedLlmOutputList(root=processed_results)
+
+    @staticmethod
+    def run(data: list[Node]) -> tuple[list[Node], list[Relationship]]:
+        tactics = CreateTargetLayers.preprocess(data)
+        logger.info("Preprocessed data for LLM classification", total_tactics=len(tactics))
+        llm_results = CreateTargetLayers.classify(tactics)
+        logger.info("LLM classification completed", total_results=len(llm_results.root))
+        processed_results = CreateTargetLayers.postprocess(llm_results)
+        logger.info("Postprocessed LLM results", total_processed_results=len(processed_results.root))
+        layers_nodes = CreateTargetLayers.create_node()
+        layers_dict = {node.type: node.id for node in layers_nodes}
+        relationships = CreateTargetLayers.create_relationships(processed_results, layers_dict)
+        logger.info("Created relationships between tactics and layers", total_relationships=len(relationships))
+        return layers_nodes, relationships
+    
 
 T = TypeVar('T')
 
@@ -124,6 +218,8 @@ class ProcessStrategyFactory:
             return DummieProcessStrategy() #type: ignore
         elif strategy_class is TacticsTechniquesProcessStrategy:
             return TacticsTechniquesProcessStrategy() #type: ignore
+        elif strategy_class is CreateTargetLayers:
+            return CreateTargetLayers() #type: ignore
         else:
             raise ValueError(f"Unknown strategy: {strategy_class}")
         
